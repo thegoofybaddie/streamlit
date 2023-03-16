@@ -3,8 +3,9 @@ import pickle
 
 st.title('Revenue Prediction')
 a = st.number_input('Revenue Prediction')
+filename = 'model.pickle'
+pickle.dump(model, open(filename, "wb"))
+model = pickle.load(open(filename, "rb"))
 if st.button('Predict'):
-  filename = 'model.pickle'
-  pickle.dump(model, open(filename, "wb"))
-  model = pickle.load(open(filename, "rb")) 
+   
   
