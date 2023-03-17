@@ -1,5 +1,5 @@
 import streamlit as st
-
+import pickle
 st.title('Revenue Prediction')
 x = st.number_input('Input Temperature')
 filename = 'model.pickle'
