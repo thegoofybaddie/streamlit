@@ -8,4 +8,4 @@ filename = 'model.pickle'
 model = pickle.load(open(filename, "rb"))
 if st.button('Predict'):
    result = model.predict(x)
-  
+ 
